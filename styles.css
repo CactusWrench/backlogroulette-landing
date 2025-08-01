@@ -301,23 +301,18 @@ body {
     text-align: center;
 }
 
-.screenshot-placeholder {
-    width: 200px;
-    height: 400px;
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    border-radius: 25px;
+.screenshot-container {
+    width: 250px;
     margin: 0 auto 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    border-radius: 25px;
+    overflow: hidden;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
     border: 8px solid #222;
     position: relative;
-    overflow: hidden;
+    background: #222;
 }
 
-.screenshot-placeholder::before {
+.screenshot-container::before {
     content: '';
     position: absolute;
     top: 15px;
@@ -327,19 +322,14 @@ body {
     height: 4px;
     background: #666;
     border-radius: 2px;
+    z-index: 2;
 }
 
-.placeholder-icon {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    color: white;
-}
-
-.placeholder-text {
-    color: white;
-    font-size: 1.1rem;
-    font-weight: 600;
-    margin: 0;
+.screenshot-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 17px;
 }
 
 .screenshot-item h4 {
